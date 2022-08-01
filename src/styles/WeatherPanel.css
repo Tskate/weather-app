@@ -1,0 +1,38 @@
+.weatherPanel {
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+    gap: 0.3em;
+    flex-wrap: wrap;
+}
+
+.numberOfDegree {
+    box-sizing: content-box;
+    font-size: 8rem;
+    line-height: 0.75em;
+}
+.locAndAtmContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 0.5em;
+}
+.location {
+    font-size: 4em;
+    font-weight: bolder;
+}
+.dateNow, .weatherType {
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.atmosphere img {
+    height: 5em;
+    width: auto;
+}
+
+@media screen and (max-width: 858px) {
+    .location {
+        text-align: left;
+    }
+}
