@@ -14,8 +14,7 @@ function App() {
         fetch(`https://api.weatherapi.com/v1/forecast.json?key=c308218bd3bb429d940150155220807&q=${searchRequest}&days=3&aqi=no&alerts=no`)
             .then(res => res.ok ? res.json() : alert("Sorry, this city not found."))
             .then(data => {
-                if(data) setWeatherInfo(data)
-                setSearchRequest('Kiev')
+                data ? setWeatherInfo(data) : setSearchRequest('')
             })
 
     },[click])
